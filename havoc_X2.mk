@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The havoc Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X2 device
 $(call inherit-product, device/realme/X2/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common havoc stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X2
+PRODUCT_NAME := havoc_X2
 PRODUCT_DEVICE := X2
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme X2
@@ -33,3 +33,9 @@ BUILD_FINGERPRINT := "google/raven/raven:12/SQ3A.220605.009.B1/8650216:user/rele
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
+# Udfps
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
+
+# Blurs
+TARGET_SUPPORTS_BLUR := true

@@ -93,6 +93,18 @@ ro.config.dha_th_rate=2.3
 ro.config.sdha_apps_bg_max=64 
 ro.config.sdha_apps_bg_min=8
 
+# Blur
+ro.launcher.blur.appLaunch=0 
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+
+#Havoc
+ro.havoc.device.name=Realme X2
+ro.havoc.group.url=https://t.me/rishavupdates
+ro.havoc.maintainer=Hritwik
+ro.havoc.maintainer.username=ranacc1
+
+
 # perms
 ro.control_privapp_permissions=log
 
