@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/X2/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X2
+PRODUCT_NAME := aicp_X2
 PRODUCT_DEVICE := X2
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme X2
@@ -33,3 +33,9 @@ BUILD_FINGERPRINT := "google/raven/raven:12/SQ3A.220605.009.B1/8650216:user/rele
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
+# Udfps
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
+
+# Blurs
+TARGET_SUPPORTS_BLUR := true
