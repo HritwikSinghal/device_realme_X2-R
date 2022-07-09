@@ -95,3 +95,9 @@ ro.config.sdha_apps_bg_min=8
 
 # perms
 ro.control_privapp_permissions=log
+
+
+# adb
+persist.service.adb.enable=1                                                    
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
